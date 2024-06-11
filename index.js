@@ -2,7 +2,6 @@ const { Telegraf, Markup } = require('telegraf');
 const axios = require('axios');
 const ytdl = require('ytdl-core');
 const { Client } = require('tdl');
-const { TDLib } = require('tdl-tdlib-addon');
 
 const botToken = process.env.BOT_TOKEN;
 const apiId = process.env.API_ID;
@@ -11,7 +10,7 @@ const phoneNumber = process.env.PHONE_NUMBER;
 
 const bot = new Telegraf(botToken);
 
-const client = new Client(new TDLib(), {
+const client = new Client({
     apiId: apiId,
     apiHash: apiHash,
 });
