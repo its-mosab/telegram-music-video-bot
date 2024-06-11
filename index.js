@@ -112,4 +112,3 @@ bot.action('details', (ctx) => {
 bot.launch();
 
 console.log('Bot is running...');
-  
